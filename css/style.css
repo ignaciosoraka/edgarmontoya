@@ -124,7 +124,12 @@ footer {
   transition: all 0.4s ease-in-out;
   border-radius: 10px;
 }
-
+.header .btn-danger1:hover {
+  background: #0b498d;
+ 
+  color: #ffffff;
+  
+}
 .header .btn-danger,
 .contact .btn-danger {
   background: #35a527;
@@ -148,7 +153,7 @@ footer {
 }
 
 .header .btn-danger:hover {
-  background: transparent;
+  background: #128C7E;
   border-color: #018908;
   color: #ffffff;
 }
