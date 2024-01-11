@@ -88,8 +88,8 @@ a {
 #sponsors,
 .contact,
 footer {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 #detail,
@@ -108,7 +108,7 @@ footer {
   padding-bottom: 12px;
 }
 
-#intro .btn-danger1,
+.header .btn-danger1,
 .contact .btn-danger1 {
   background: #51aef3;
   border: 0px solid #ffffff;
@@ -125,7 +125,7 @@ footer {
   border-radius: 10px;
 }
 
-#intro .btn-danger,
+.header .btn-danger,
 .contact .btn-danger {
   background: #35a527;
 
@@ -147,7 +147,7 @@ footer {
   border-radius: 100px;
 }
 
-#intro .btn-danger:hover {
+.header .btn-danger:hover {
   background: transparent;
   border-color: #018908;
   color: #ffffff;
@@ -157,7 +157,7 @@ footer {
   background: #222;
 }
 
-#intro .btn-default:hover {
+.header .btn-default:hover {
   background: #ffffff;
   color: #333333;
   border-color: transparent;
@@ -423,7 +423,8 @@ footer {
 -----------------------------------------*/
 .header {
   position: relative;
-  background: url('../images/header.jpg') no-repeat fixed center/cover;
+  background: url('../images/header.jpg') center 1% no-repeat;
+  background-size: cover;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -446,7 +447,7 @@ footer {
 }
 
 
-#intro h3 {
+.header h3 {
   letter-spacing: 2px;
 }
 
@@ -1136,7 +1137,7 @@ footer {
     line-height: 20px;
   }
 
-  #intro {
+ .header {
     height: 65vh;
   }
 
@@ -1183,7 +1184,7 @@ footer {
 
 @media (max-width: 760px) {
 
-  #intro {
+  .header {
     height: 100vh;
   }
 
