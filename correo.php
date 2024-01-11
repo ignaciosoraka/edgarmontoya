@@ -17,14 +17,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Enviar el correo electrónico
     $to = "ignaciosoraka@gmail.com"; // Cambia esto con tu dirección de correo electrónico
-    $subject = "Nuevo mensaje del formulario de contacto";
+    $subject = "Mensaje de pagina web EdgarMontoya";
 
     // Encabezados para el correo electrónico
     $headers = "From: $email";
 
     // Intentar enviar el correo
     if (mail($to, $subject, $body, $headers)) {
-        echo "Mensaje enviado con éxito";
+        // Redirigir a la página de agradecimiento
+        header("Location: index.html");
+        exit();
     } else {
         echo "Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.";
     }
