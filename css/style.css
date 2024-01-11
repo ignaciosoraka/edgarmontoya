@@ -423,10 +423,7 @@ footer {
 -----------------------------------------*/
 .header {
   position: relative;
-  background: url('../images/header.jpg');
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
+  background: url('../images/header.jpg') no-repeat fixed center/cover;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -712,7 +709,7 @@ footer {
     Regsiter section              
 -----------------------------------------*/
 .texto {
-  background: url('../images/register-bg.jpg') 50% 0 repeat-y fixed;
+  background: url('../images/register-bg.jpg') 50% 0 repeat-y;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
