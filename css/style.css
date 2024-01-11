@@ -86,7 +86,7 @@ a {
 #servicios,
 #program,
 #sponsors,
-#contact,
+.contact,
 footer {
   padding-top: 10rem;
   padding-bottom: 10rem;
@@ -103,13 +103,13 @@ footer {
 #detail h3,
 #video h3,
 #register h3,
-#venue h3,
-#contact h3 {
+.venue h3,
+.contact h3 {
   padding-bottom: 12px;
 }
 
 #intro .btn-danger1,
-#contact .btn-danger1 {
+.contact .btn-danger1 {
   background: #51aef3;
   border: 0px solid #ffffff;
   border-radius: 0px;
@@ -126,7 +126,7 @@ footer {
 }
 
 #intro .btn-danger,
-#contact .btn-danger {
+.contact .btn-danger {
   background: #35a527;
 
   border: 0px solid #ffffff;
@@ -143,7 +143,7 @@ footer {
   border-radius: 10px;
 }
 
-#contact .btn {
+.contact .btn {
   border-radius: 100px;
 }
 
@@ -153,7 +153,7 @@ footer {
   color: #ffffff;
 }
 
-#contact .btn-danger:hover {
+.contact .btn-danger:hover {
   background: #222;
 }
 
@@ -709,7 +709,7 @@ footer {
     Regsiter section              
 -----------------------------------------*/
 .texto {
-  background: url('../images/register-bg.jpg') 50% 0 repeat-y;
+  background: url('../images/register-bg.jpg');
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
@@ -796,15 +796,15 @@ footer {
 /*---------------------------------------
    Venue section              
 -----------------------------------------*/
-#venue {
-  background: url('../images/seccion1.jpeg') 100% 0 repeat-y fixed;
+.venue {
+  background: url('../images/seccion1.jpeg');
   background-size: cover;
   background-position: center center;
   padding-top: 7rem;
   padding-bottom: 15rem;
 }
 
-#venue h2 {
+.venue h2 {
 
   padding-top: 12px;
   padding-bottom: 18px;
@@ -819,6 +819,7 @@ footer {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  padding: 50px 0;
 }
 
 .testominial-heading {
@@ -997,25 +998,25 @@ footer {
 /*---------------------------------------
    Contact section              
 -----------------------------------------*/
-#contact {
-  background: url('../images/contact-bg.jpg') 50% 0 repeat-y fixed;
+.contact {
+  background: url('../images/contact-bg.jpg');
   background-size: cover;
   background-position: center center;
 
 }
 
-#contact .contact_des {
+.contact .contact_des {
   padding-top: 3rem;
   padding-right: 2rem;
 }
 
-#contact .contact_detail {
+.contact .contact_detail {
   background: #ffffff;
   padding: 5rem 5rem 12rem 5rem;
   border-radius: 15px;
 }
 
-#contact .form-control {
+.contact .form-control {
   background: transparent;
   border: none;
   border-bottom: 1px solid #f0f0f0;
@@ -1026,15 +1027,15 @@ footer {
 
 }
 
-#contact .form-control:focus {
+.contact .form-control:focus {
   border-bottom-color: #999;
 }
 
-#contact input {
+.contact input {
   height: 45px;
 }
 
-#contact input[type="submit"] {
+.contact input[type="submit"] {
   background: #51aef3;
   border-radius: 100px;
   border: none;
@@ -1045,7 +1046,7 @@ footer {
   transition: all 0.4s ease-in-out;
 }
 
-#contact input[type="submit"]:hover {
+.contact input[type="submit"]:hover {
   background: #f2545f;
 }
 
@@ -1143,7 +1144,7 @@ footer {
     margin-top: 42px;
   }
 
-  #contact .contact_detail {
+  .contact .contact_detail {
     background: #ffffff;
     padding: 10rem 3rem 10rem 5rem;
   }
@@ -1174,7 +1175,7 @@ footer {
     padding-top: 22px;
   }
 
-  #contact .contact_detail {
+  .contact .contact_detail {
     margin-top: 82px;
   }
 
