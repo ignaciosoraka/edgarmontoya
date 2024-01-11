@@ -801,14 +801,23 @@ footer {
   background: url('../images/seccion1.jpeg');
   background-size: cover;
   background-position: center center;
-  padding-top: 7rem;
+  padding-top: 26rem;
   padding-bottom: 15rem;
 }
 
 .venue h2 {
-
+  margin-bottom: -100px;
+  margin-left: -50px;
+  color: rgb(255, 255, 255);
   padding-top: 12px;
   padding-bottom: 18px;
+}
+
+@media (max-width:768px) {
+  .venue h2{
+    font-size: 20px;
+    margin-left: 0px;
+  }
 }
 
 /*---------------------------------------
@@ -1137,7 +1146,7 @@ footer {
     line-height: 20px;
   }
 
- .header {
+  .header {
     height: 65vh;
   }
 
