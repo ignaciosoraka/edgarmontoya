@@ -423,9 +423,102 @@ footer {
 
 
 }
+/*---------------------------------------
+    HEADER INICIAL             
+-----------------------------------------*/
+.header2 {
+  position: relative;
+  background: url('../images/header.jpg') center  no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+.header2::before {
+
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Ajusta el valor alfa para la opacidad deseada */
+}
+
+
+.header2 h3 {
+  letter-spacing: 2px;
+}
+
+.seguro-img-container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.seguro-img {
+
+ 
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.seguro-img:hover {
+  transform: scale(1.1); /* Efecto de "flotar" */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra al hacer hover */
+  border-radius: 15px;
+  
+}
+
+.seguro-img-container-right h4 {
+  box-shadow: none; /* Evita que se aplique sombra al título en hover */
+}
+
+.seguro-img-left {
+  position: absolute;
+  left: 250px;
+  
+}
+
+.seguro-img-right {
+  position: absolute;
+  right: 250px;
+}
+
+.seguro-content {
+  position: relative;
+}
 
 
 
+.textoheader {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.btn-seguro {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .seguro-img-container {
+    flex-direction: column; /* Hace que las imágenes estén una debajo de la otra */
+  }
+
+  .seguro-img img {
+    margin: 10px auto; /* Espaciado entre las imágenes */
+  }
+
+  .seguro-img-container-left,
+  .seguro-img-container-right {
+    text-align: center;
+  }
+}
 /*---------------------------------------
     Intro section              
 -----------------------------------------*/
@@ -452,6 +545,7 @@ footer {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   /* Ajusta el valor alfa para la opacidad deseada */
+  
 }
 
 
@@ -467,7 +561,7 @@ footer {
 .edgar {
   position: relative;
   width: 70%;
-  margin-top: -30px;
+  
   margin-left: 100px;
   border-radius: 250px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
@@ -718,12 +812,17 @@ footer {
     Regsiter section              
 -----------------------------------------*/
 .texto {
-  background: url('../images/register-bg.jpg');
+  background: url('../images/e0c2f653-998e-44b0-95f9-f044b9cdeec5.jpg');
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
   color: #ffffff;
+  
+  
 }
+
+
+
 
 .texto .form-control {
   background: transparent;
@@ -1030,7 +1129,7 @@ footer {
 
 .contact .contact_detail {
   background: #ffffff;
-  padding: 5rem 5rem 12rem 5rem;
+  padding: 5rem 5rem 5rem 5rem;
   border-radius: 15px;
 }
 
@@ -1135,7 +1234,6 @@ footer {
 }
 
 
-
 /*---------------------------------------
    Responsive styles            
 -----------------------------------------*/
@@ -1194,7 +1292,7 @@ footer {
   }
 
   .contact .contact_detail {
-    margin-top: 82px;
+    margin-top: 10px;
   }
 
 }

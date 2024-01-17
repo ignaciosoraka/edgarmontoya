@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validar los datos (puedes agregar más validaciones según tus necesidades)
 
     // Configurar el destinatario del correo
-    $destinatario = "ignaciosoraka@gmail.com"; // Cambia esto por tu dirección de correo electrónico
+    $destinatario = "hola@edgarmontoya.mx"; // Cambia esto por tu dirección de correo electrónico
 
     // Construir el cuerpo del correo
     $mensaje = "Nuevo mensaje del formulario:\n\n";

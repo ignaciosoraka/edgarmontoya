@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var participantsElement = document.querySelector('[data-text="Participantes"]');
+    var participantsElement = document.querySelector('[data-text="Asegurados"]');
     var programsElement = document.querySelector('[data-text="Horas: Tiempo de respuesta"]');
     var speakerElement = document.querySelector('[data-text="Conversaciones"]');
   
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   
     function animatePrograms() {
-      animateCount(programsElement, 24, 350);
+      animateCount(programsElement, 24, 4);
     }
   
     function animateSpeaker() {
