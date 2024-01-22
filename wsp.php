@@ -8,8 +8,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validar los datos (puedes agregar más validaciones según tus necesidades)
 
     // Configurar el destinatario del correo
-    $destinatario = "hola@edgarmontoya.mx"; // Cambia esto por tu dirección de correo electrónico
-
+    $to = "hola@edgarmontoya.mx"; // Cambia esto por tu dirección de correo electrónico
+    $subject = "Mensaje de pagina web SegurosGMedicos";
     // Construir el cuerpo del correo
     $mensaje = "Nuevo mensaje del formulario:\n\n";
     $mensaje .= "Nombre: $nombre\n";
@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensaje .= "Teléfono: $telefono\n";
 
     // Enviar el correo
-    $envioCorreo = mail($destinatario, "Nuevo mensaje del formulario", $mensaje);
+    $envioCorreo = mail($to, "Nuevo mensaje del formulario", $mensaje);
 
     // Verificar si el correo se envió correctamente
     if ($envioCorreo) {

@@ -125,12 +125,14 @@ footer {
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
+
 .header .btn-danger1:hover {
   background: #0b498d;
- 
+
   color: #ffffff;
-  
+
 }
+
 .header .btn-danger,
 .contact .btn-danger {
   background: #35a527;
@@ -170,6 +172,28 @@ footer {
   border-color: transparent;
 }
 
+.btn-danger3 {
+  background: #51aef3;
+  border: 0px solid #ffffff;
+  border-radius: 0px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  padding: 14px 42px;
+  margin-top: 42px;
+  margin-right: 12px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.btn-danger3:hover {
+  background: #0b498d;
+ 
+  color: #ffffff;
+  
+}
 
 
 
@@ -280,6 +304,9 @@ footer {
 /*---------------------------------------
     formulario post wsp           
 -----------------------------------------*/
+/*---------------------------------------
+   Formulario de wsp             
+-----------------------------------------*/
 .custom-form-body {
   background-color: #ffffff;
   margin: 0;
@@ -288,71 +315,69 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  /* 100% del viewport height para centrar verticalmente */
-  margin: 0;
+  min-height: 100vh;
 }
 
+/* Estilos del formulario específico */
+.custom-form {
+  max-width: 600px; /* Ajusta el ancho máximo del formulario */
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 50px; /* Ajusta la separación desde la parte superior según tus preferencias */
+  background-color: #fff;
+  border-radius: 10px; /* Ajusta el radio de borde según tus preferencias para tener bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+@media screen and (max-width: 1500px) {
+  .custom-form {
+    margin-top: 150px; /* Ajusta la separación desde la parte superior para pantallas más pequeñas */
+  }
+  .custom-form h1{
+    font-size: 24px;
+  }
+}
 
 .custom-form h1 {
   text-align: center;
-  color: #ffffff;
+  color: #000000; /* Cambia el color del texto según tus preferencias */
+  margin-bottom: 20px; /* Ajusta el espacio entre el título y el formulario */
 }
 
-.custom-form form {
-  max-width: 400px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
+
+/* Estilos de la barra de navegación */
+.navbar {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
 }
-
-.custom-form label {
-  display: block;
-  margin-bottom: 8px;
-  color: #333;
-}
-
-.custom-form input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 16px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.custom-form button {
-  background-color: #51aef3;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 100%;
-  /* Ocupar el 100% del ancho del contenedor */
-  box-sizing: border-box;
-  /* Incluir el padding en el ancho */
-}
-
-.custom-form button:hover {
-  background-color: #45a049;
-}
-
 
 /*---------------------------------------
     Navigation Links section              
 -----------------------------------------*/
 
 .navbar-brand img {
-  max-height: 100px;
+  max-height: 130px;
+  /* Ajusta el tamaño máximo vertical del logotipo */
+  max-width: 100%;
+  /* Ajusta el tamaño máximo horizontal del logotipo */
+  margin-top: -50px;
+}
+
+.navbar-brand2 img {
+  max-height: 140px;
   /* Ajusta el tamaño máximo vertical del logotipo */
   max-width: 100%;
   /* Ajusta el tamaño máximo horizontal del logotipo */
   margin-top: -40px;
+}
+
+@media(max-width:768px) {
+  .navbar-brand img {
+    max-height: 120px;
+    margin-top: -50px;
+  }
 }
 
 .custom-navbar {
@@ -423,12 +448,13 @@ footer {
 
 
 }
+
 /*---------------------------------------
     HEADER INICIAL             
 -----------------------------------------*/
 .header2 {
   position: relative;
-  background: url('../images/header.jpg') center  no-repeat;
+  background: url('../images/header.jpg') center no-repeat;
   background-size: cover;
   color: #ffffff;
   display: flex;
@@ -436,6 +462,7 @@ footer {
   height: 100vh;
   text-align: center;
 }
+
 .header2::before {
 
   content: '';
@@ -462,27 +489,30 @@ footer {
 
 .seguro-img {
 
- 
+
   margin: 0 10px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .seguro-img:hover {
-  transform: scale(1.1); /* Efecto de "flotar" */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra al hacer hover */
+  transform: scale(1.1);
+  /* Efecto de "flotar" */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  /* Sombra al hacer hover */
   border-radius: 15px;
-  
+
 }
 
 .seguro-img-container-right h4 {
-  box-shadow: none; /* Evita que se aplique sombra al título en hover */
+  box-shadow: none;
+  /* Evita que se aplique sombra al título en hover */
 }
 
 .seguro-img-left {
   position: absolute;
   left: 250px;
-  
+
 }
 
 .seguro-img-right {
@@ -507,11 +537,13 @@ footer {
 
 @media (max-width: 768px) {
   .seguro-img-container {
-    flex-direction: column; /* Hace que las imágenes estén una debajo de la otra */
+    flex-direction: column;
+    /* Hace que las imágenes estén una debajo de la otra */
   }
 
   .seguro-img img {
-    margin: 10px auto; /* Espaciado entre las imágenes */
+    margin: 10px auto;
+    /* Espaciado entre las imágenes */
   }
 
   .seguro-img-container-left,
@@ -519,12 +551,13 @@ footer {
     text-align: center;
   }
 }
+
 /*---------------------------------------
     Intro section              
 -----------------------------------------*/
 .header {
   position: relative;
-  background: url('../images/header.jpg') center 1% no-repeat;
+  background: url('../images/opcion1.3.jpg') center 1% no-repeat;
   background-size: cover;
   color: #ffffff;
   display: flex;
@@ -545,7 +578,7 @@ footer {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   /* Ajusta el valor alfa para la opacidad deseada */
-  
+
 }
 
 
@@ -561,7 +594,7 @@ footer {
 .edgar {
   position: relative;
   width: 70%;
-  
+
   margin-left: 100px;
   border-radius: 250px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
@@ -812,13 +845,13 @@ footer {
     Regsiter section              
 -----------------------------------------*/
 .texto {
-  background: url('../images/e0c2f653-998e-44b0-95f9-f044b9cdeec5.jpg');
+  background: url('../images/Diseño\ sin\ título.png');
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
   color: #ffffff;
-  
-  
+
+
 }
 
 
@@ -908,7 +941,7 @@ footer {
   background: url('../images/seccion1.jpeg');
   background-size: cover;
   background-position: center center;
-  padding-top: 26rem;
+  padding-top: 30rem;
   padding-bottom: 15rem;
 }
 
@@ -921,10 +954,14 @@ footer {
 }
 
 @media (max-width:768px) {
-  .venue h2{
+  .venue h2 {
     font-size: 20px;
     margin-left: 0px;
   }
+
+  .venue {
+    
+    padding-top: 15rem;}
 }
 
 /*---------------------------------------
@@ -1124,7 +1161,12 @@ footer {
 
 .contact .contact_des {
   padding-top: 3rem;
-  padding-right: 2rem;
+  
+}
+
+.contact_des {
+  background-color:#0b498d; /* Puedes cambiar el color a tu preferencia utilizando un código de color hexadecimal, RGB, o un nombre de color */
+  padding: 15px; /* Añadir relleno para mejorar la apariencia visual */
 }
 
 .contact .contact_detail {
@@ -1164,7 +1206,7 @@ footer {
 }
 
 .contact input[type="submit"]:hover {
-  background:#0b498d;
+  background: #0b498d;
 }
 
 
@@ -1229,7 +1271,7 @@ footer {
 }
 
 .social-icon li a:hover {
-  background:#0b498d;
+  background: #0b498d;
   color: #ffffff;
 }
 
