@@ -23,10 +23,10 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
-  font-weight: 600;
+h5{  font-weight: 600;
+
 }
+
 
 h3,
 h5 {
@@ -49,6 +49,10 @@ h3 {
 
 .h3servicios {
   line-height: 20px;
+  
+  color:white;
+  font-weight: 600;
+  padding: 5px 8px;
 }
 
 h5 {
@@ -91,6 +95,11 @@ footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+
+#video{
+ z-index: 1;
+}
+
 
 #detail,
 #servicios,
@@ -162,6 +171,21 @@ footer {
   color: #ffffff;
 }
 
+
+@media(max-width:768px) {
+  .header .btn-danger,
+  .contact .btn-danger {
+    padding: 10px 32px;
+  }
+
+  .header .btn-danger1,
+  .contact .btn-danger1 {
+
+    padding: 10px 32px;
+  }
+
+}
+
 .contact .btn-danger:hover {
   background: #128C7E;
 }
@@ -198,53 +222,22 @@ footer {
 
 
 
-/*---------------------------------------
-    Preloader section              
-
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 99999;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  background: none repeat scroll 0 0 #ffffff;
+.carousel-section {
+  width: 80%;
+  margin: auto;
 }
 
-.sk-rotating-plane {
-  width: 50px;
-  height: 50px;
-  background-color: #222;
-  -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
-          animation: sk-rotatePlane 1.2s infinite ease-in-out; }
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
 
-@-webkit-keyframes sk-rotatePlane {
-  0% {
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
-  50% {
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
-  100% {
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
-
-@keyframes sk-rotatePlane {
-  0% {
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
-  50% {
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
-  100% {
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
-
-
+.slide {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 100%;
+}
 -----------------------------------------*/
 .textoheader {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
@@ -253,15 +246,244 @@ footer {
 
 @media(max-width:768px) {
   .textoheader {
-    font-size: 30px;
+    font-size: 25px;
 
 
   }
 }
 
+/*---------------------------------------
+   PLANES            
+-----------------------------------------*/
+
+.popular-categories {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.popular-categories .section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.popular-categories .naccs {
+  position: relative;
+  background: #166b95;
+  background-size: 400% 400%;
+
+  animation: gradient-e60a44dc 15s ease-in-out infinite;
+  border-radius: 7px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.popular-categories .icon {
+  display: inline-block;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 62px;
+  color: #757575;
+  background-color: #fff;
+  margin-right: 15px;
+}
+
+.popular-categories .icon img {
+  max-width: 46px;
+}
+
+.popular-categories .naccs .menu div.first-thumb {
+  border-top-left-radius: 7px;
+}
+
+.popular-categories .naccs .menu div.last-thumb {
+  margin-bottom: 0px;
+  border-bottom-left-radius: 7px;
+}
+
+.popular-categories .naccs .menu div {
+  margin-top: 15px;
+  color: #fff;
+  font-size: 13px;
+  background-color: #3ebcfa;
+  margin-bottom: 1px;
+  height: 100px;
+  text-align: left;
+  border-radius: 10px;
+  padding: 0px 10px;
+  line-height: 100px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.popular-categories .naccs .menu div.active,
+.popular-categories .naccs .menu div.active .thumb {
+  background-color: #2b2d42;
+}
+
+.popular-categories ul.nacc {
+  position: relative;
+  min-height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.popular-categories ul.nacc li {
+  opacity: 0;
+  transform: translateX(-50px);
+  position: absolute;
+  list-style: none;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.popular-categories ul.nacc li.active {
+  transition-delay: 0.3s;
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.popular-categories ul.nacc li {
+  width: 100%;
+}
+
+.popular-categories .nacc .thumb .left-text {
+  margin-left: 30px;
+}
+
+.popular-categories .nacc .thumb .left-text h4 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.popular-categories .nacc .thumb .left-text p {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.popular-categories .nacc .thumb .right-image {
+  padding: 60px;
+  display: inline-flex;
+} 
+
+.popular-categories .nacc .thumb img {
+  border-radius: 7px;
+}
+
+.popular-categories .nacc .thumb .left-text .main-white-button a{
+  width: 100%;
+  text-align: center;
+}
+
+
+/* CSS */
+.cotizar-btn {
+  background-color: #4590c9;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease; /* Agregamos una transición para hacer el cambio de color suave */
+}
+
+.cotizar-btn:hover {
+  background-color: #2b2d42; /* Cambiamos el color de fondo al pasar el mouse */
+}
 
 
 
+
+
+
+/* Estilos para el contenedor principal */
+.new-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilos para el grid */
+.new-grid-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Estilos para los items del grid */
+.new-grid-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Estilos para el contenedor del icono y título */
+.new-icon-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para el contenedor del icono */
+.new-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media (max-width: 1200px) {
+  .popular-categories .icon {
+    margin-left: 30%;
+    transform: translateX(-33px);
+    text-align: center;
+    display: inline-block;
+  }
+
+ 
+}
+
+@media (max-width: 992px) {
+
+  .popular-categories .nacc .thumb .left-text {
+    margin: 30px;
+
+    
+  }
+
+  .popular-categories .nacc .thumb .right-image {
+    padding: 0px;
+    margin: 0px 30px 30px 30px;
+    display: block;
+  }
+  .popular-categories .naccs .menu div.first-thumb {
+    border-top-right-radius: 7px;
+  }
+  .popular-categories .naccs .menu div.last-thumb {
+    border-bottom-left-radius: 0px;
+  }
+}
+@media screen and (max-width: 756px) {
+  .new-grid-section {
+      grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  .container {
+      justify-content: center;
+  }
+}
 
 /*---------------------------------------
     flotante whatapp             
@@ -375,8 +597,9 @@ footer {
 
 @media(max-width:768px) {
   .navbar-brand img {
-    max-height: 120px;
-    margin-top: -50px;
+    max-height: 128px;
+    margin-top: -46px;
+    margin-left: -10px;
   }
 }
 
@@ -557,7 +780,7 @@ footer {
 -----------------------------------------*/
 .header {
   position: relative;
-  background: url('../images/opcion1.3.jpg') center 1% no-repeat;
+  background: url('../images/header_Mesa\ de\ trabajo\ 1.jpg') center 1% no-repeat;
   background-size: cover;
   color: #ffffff;
   display: flex;
@@ -566,6 +789,9 @@ footer {
   text-align: center;
 }
 
+.header h3 {
+  font-size: 18px;
+}
 
 
 .header::before {
@@ -582,12 +808,28 @@ footer {
 }
 
 
-.header h3 {
-  letter-spacing: 2px;
+
+/*
+@media screen and (max-width: 768px) {
+  .header {
+    background: url('../images/header-movile_Mesa\ de\ trabajo\ 1\ copia.jpg') center 1% no-repeat;
+  }
 }
 
-
-
+@media screen and (max-width: 480px) {
+  .header {
+    background: url('../images/header-movile_Mesa\ de\ trabajo\ 1\ copia.jpg') center 1% no-repeat;
+    position: relative;
+  
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+}
+*/
 /*---------------------------------------
    Overview  section              
 -----------------------------------------*/
@@ -670,6 +912,25 @@ footer {
 -----------------------------------------*/
 #video iframe {
   border: none;
+  border-radius: 15px;
+  padding: 0px 5px 0px 5px;
+}
+@media screen and (max-width: 767px) {
+  #video .container {
+    padding-top: 20px; /* Añadir un espacio superior para evitar la superposición del video */
+  }
+
+  #video h2 {
+    font-size: 24px; /* Reducir el tamaño del título */
+  }
+
+  #video p {
+    font-size: 14px; /* Reducir el tamaño del texto */
+  }
+
+  #video .btn {
+    margin-top: 20px; /* Añadir un espacio superior al botón para evitar que se oculte */
+  }
 }
 
 
@@ -682,13 +943,14 @@ footer {
 }
 
 #servicios h3 {
-  font-size: 18px;
+  font-size: 17px;
   margin-bottom: 0px;
 }
 
 #servicios h6 {
   color: #666;
   margin-top: 4px;
+  margin: 0px 4px;
 }
 
 #servicios img {
@@ -850,6 +1112,7 @@ footer {
   background-size: cover;
   background-position: center center;
   color: #ffffff;
+  text-align: center;
 
 
 }
@@ -865,6 +1128,19 @@ footer {
   margin-bottom: 16px;
 }
 
+
+@media(max-width:768px) {
+  .texto h2 {
+    font-size: 20px;
+
+
+  }
+  .texto h3 {
+    font-size: 18px;
+
+
+  }
+}
 
 
 
@@ -941,7 +1217,7 @@ footer {
   background: url('../images/seccion1.jpeg');
   background-size: cover;
   background-position: center center;
-  padding-top: 30rem;
+  padding-top: 36rem;
   padding-bottom: 15rem;
 }
 
@@ -974,7 +1250,9 @@ footer {
   flex-direction: column;
   width: 100%;
   padding: 50px 0;
+  background: url('ruta/de/tu/imagen.jpg') repeat; /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta de tu imagen */
 }
+
 
 .testominial-heading {
   letter-spacing: 1px;
@@ -1161,6 +1439,7 @@ footer {
 
 .contact .contact_des {
   padding-top: 3rem;
+  border-radius: 15px;
   
 }
 

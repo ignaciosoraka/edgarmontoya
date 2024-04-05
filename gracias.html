@@ -32,8 +32,13 @@
 <body>
 
     <div class="thank-you-message">
-        <p>¡Gracias por enviar tu mensaje!</p>
-        <p>Nos pondremos en contacto contigo pronto.</p>
+        <p>¡Gracias por agendar tu cita!<br>En breve tendré el gusto de poder brindarle el asesoramiento que necesita.
+        </p>
+        <div class="signature">
+            <img src="images/Logo_Edgar-Montoya_logo1.png" alt="Firma de Edgar Montoya">
+            
+        </div>
+        
     </div>
     <a href="index.html" class="back-to-home">Volver a la página principal</a>
 
@@ -45,11 +50,7 @@
             padding: 20px;
         }
 
-        .thank-you-message {
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 20px;
-        }
+    
 
         .back-to-home {
             display: inline-block;
@@ -65,6 +66,35 @@
             background-color: #034e80;
             color: #fff;
         }
+
+        .thank-you-message {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .signature {
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .signature img {
+            width: 200px;
+            /* ajusta el tamaño de la imagen de la firma */
+            height: auto;
+            /* para mantener la proporción */
+            display: block;
+            /* para asegurarse de que la imagen esté sola en su línea */
+            margin-right: 10px;
+            /* espacio entre la imagen y el texto */
+        }
+
+        /* Media query para ajustar el tamaño de la imagen en dispositivos móviles */
+        @media only screen and (max-width: 600px) {
+            .signature img {
+                width: 100px;
+                /* tamaño más pequeño para dispositivos móviles */
+            }
+        }
     </style>
 <footer>
     <div class="container">
@@ -76,12 +106,19 @@
                     | Telefono: <a rel="nofollow" href="" target="_parent">(442) 667 3811</a></p>
 
                 <ul class="social-icon">
-                    <i class="c-icon c-social-icon--fb c-icon c-icon--facebook-circle" aria-hidden="true"></i>
-                    <li><a href="#"class="fa-brands fa-square-instagram" data-wow-delay="1.3s"></a></li>
-                    <li><a href="#"  class="fa-brands fa-facebook" data-wow-delay="1.6s"></a></li>
-                    <li><a href="#"  class="fa-brands fa-tiktok" data-wow-delay="1.9s"></a></li>
-							<li><a href="#"  class="fa-brands fa-linkedin" data-wow-delay="2.2s"></a></li>
-							<li><a href="#" class="fa fa-youtube wow fadeInUp" data-wow-delay="2.3s"></a></li>
+                    <li><i class="c-icon c-social-icon--fb c-icon c-icon--facebook-circle" aria-hidden="true"></i>
+                    </li>
+                    <li><a href="https://www.instagram.com/seguros.edgarmontoya/" target="_blank"
+                            class="fa-brands fa-square-instagram"  data-wow-delay="1.3s"></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61554934655678" target="_blank"
+                            class="fa-brands fa-facebook"  data-wow-delay="1.6s"></a></li>
+                    <li><a href="https://www.tiktok.com/@segurosedgarmontoya?lang=es" target="_blank"
+                            class="fa-brands fa-tiktok"  data-wow-delay="1.9s"></a></li>
+                    <li><a href="https://www.linkedin.com/in/edgar-montoya-0814502a7/" target="_blank"
+                            class="fa-brands fa-linkedin"  data-wow-delay="2.2s"></a></li>
+                    <li><a href="https://www.youtube.com/@Seguros.EdgarMontoya" target="_blank"
+                            class="fa fa-youtube"  ></a></li>
 
                 </ul>
 

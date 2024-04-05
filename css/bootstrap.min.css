@@ -1420,7 +1420,7 @@ textarea {
 }
 
 a {
-    color: #337ab7;
+    color: #000000;
     text-decoration: none
 }
 
@@ -2080,8 +2080,8 @@ pre code {
 .col-xs-9 {
     position: relative;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px
+    padding-right: 30px;
+    padding-left: 30px
 }
 
 .col-xs-1,
@@ -7174,7 +7174,7 @@ button.list-group-item-danger.active:hover {
 }
 
 .embed-responsive {
-    position: relative;
+   
     display: block;
     height: 0;
     padding: 0;
