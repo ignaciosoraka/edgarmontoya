@@ -381,7 +381,10 @@ footer {
   width: 100%;
   text-align: center;
 }
-
+.cotizar-btn a {
+  color: white; /* Cambiar el color del texto a blanco */
+  text-decoration: none; /* Eliminar subrayado del enlace */
+}
 
 /* CSS */
 .cotizar-btn {
